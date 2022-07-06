@@ -50,6 +50,7 @@ for i in tqdm(range(len(books['ISBN']))):
             RatingCount.append(None)
     except Exception as e: 
         print("Error parsing response json, exception: ", str(e))
+        print("Response: ", data)
         print(Pages)
         print(Category)
         print(Rating)
