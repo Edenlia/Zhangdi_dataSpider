@@ -14,10 +14,10 @@ RatingCount = []
 
 for item in books['ISBN']:
     url =  base_url + item
-    res = requests.get(url=url, proxies=proxies)
+    res = requests.get(url=url)
     data = res.json()
     
-    if data['totalItems'] is 0:
+    if data['totalItems'] == 0:
         continue
         
     if 'volumeInfo' not in data['items'][0]:
