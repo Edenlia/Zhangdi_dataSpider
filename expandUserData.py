@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-books = pd.read_csv('./data/Books.csv')
+books = pd.read_csv('./Books.csv')
 
 import requests
 
